@@ -11,16 +11,11 @@ To build this box yourself, you need the following software:
 - Packer
 
 My tool versions are:
-- Vagrant 1.8.1 (from Fedora 23)
-- Libvirt 1.2.18.2 (from Fedora 23)
-- Vagrant-libvirt 0.33 (installed locally with the Vagrant plugin manager)
-- Packer 0.10.0 (dowloaded from packer.io)
+- Vagrant 1.9.3
+- Libvirt 1.2.18.2
+- Vagrant-libvirt 0.37
+- Packer 1.0.0
 
-To build the Vagrant box, switch into the `ubuntu-16.04` directory and run 
+To build the Vagrant box, switch into the `ubuntu-16.04` directory and run
 `packer build ubuntu-16.04-minimal.json`. Note that this will take awhile because
 the packer script will try to download the Ubuntu ISO if it doesn't have it cached.
-
-This box is listed on Hashicorp Atlas, and can be found here:  
-https://atlas.hashicorp.com/nrclark/boxes/xenial64-minimal-libvirt
-
-
